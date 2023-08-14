@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quiz App</title>
+</head>
+<body>
+     <div class="main">
+        <div class="heading">
+            <p>Quiz App</p>
+        </div>
+        <div id="box">
+            <h2 id="quesBox">1) This is a Dummy question.</h2>
+            <div class="row">
+                <!-- The label has been made just to give names to the option we will change it dynamically later.
+                name="Option" has been given so that only one option can be selected among all of them.
+                in label the for is given a id same as input becasue it will be used in javascript -->
+
+                <input class="options" type="radio" value="a" id="option1" name="option">
+                <label for="option1"> Option 1</label>
+            </div>
+            <div class="row">
+                <input class="options" type="radio" value="b" id="option2" name="option">
+                <label for="option2"> Option 2</label>
+            </div>
+            <div class="row">
+                <input class="options" type="radio" value="c" id="option3" name="option">
+                <label for="option3"> Option 3</label>
+            </div>
+            <div class="row">
+                <input class="options" type="radio" value="d" id="option4" name="option">
+                <label for="option4"> Option 4</label>
+            </div>
+
+           <div class="btn-main">
+            <button class="btn" onclick="submitQuiz()">
+                Submit
+            </button>
+           </div>
+        </div>
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>
